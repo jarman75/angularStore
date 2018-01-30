@@ -25,10 +25,12 @@
             </select>
         </fieldset>
         <fieldset class="form-group">
-            <textarea name="body" class="form-control" placeholder="Write a short review of the product..." title="Review" ng-model="reviewCtrl.review.body" required></textarea>
+            <label class="control-label" for="body">Body</label>
+            <textarea id="body" name="body" class="form-control" placeholder="Write a short review of the product..." title="Review" ng-model="reviewCtrl.review.body" required></textarea>
         </fieldset>
         <fieldset class="form-group">
-            <input name="author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" ng-model="reviewCtrl.review.author" required/>
+            <label class="control-label" for="author">Author</label>
+            <input id="author" name="author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" ng-model="reviewCtrl.review.author" required/>
         </fieldset>
         <!-- show is valide reviewForm -->
         <div> reviewForm is {{reviewForm.$valid}} </div>
