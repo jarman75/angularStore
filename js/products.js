@@ -6,14 +6,14 @@
         return {
             restrict: 'E',
             templateUrl: 'product-gallery.html',
-            // controller: function() {
-            //     this.imageIndex = 0;
-            //     this.currentImageChange = function(imageNumber) {
-            //       console.log(imageNumber);
-            //       this.imageIndex = imageNumber || 0;
-            //     }; 
-            // },
-            // controllerAs: 'gallary'
+            controller: function() {
+                this.imageIndex = 0;
+                this.currentImageChange = function(imageNumber) {
+                  console.log(imageNumber);
+                  this.imageIndex = imageNumber || 0;
+                }; 
+            },
+            controllerAs: 'gallery'
         };
     })
 
