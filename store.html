@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">    
+    <title>Example - Gems store</title> 
+    <!-- bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/store.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- angular 1.6.7 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/products.js"></script>            
+</head>
+<body>                            
+    
+    <!--  Store Header  -->
+    <header>
+        <h1 class="text-center">Flatlander Crafted Gems</h1>
+        <h2 class="text-center">– an Angular store –</h2>
+    </header>
+
+    <div ng-app="store" ng-controller="StoreController as store">                                
+        <ul class="list-group">            
+            <!-- list of gems items of store -->
+            <li class="list-group-item" ng-repeat="product in store.productlist | orderBy: '-price'">
+                
+                <!-- description of product -->
+                <div ng-include src="'product-name.html'"></div>                    
+
+                <!-- images gallery -->
+                <product-gallery ng-show="product.images.length" ng-controller="GalleryController as gallary"></product-gallery>
+
+                <!-- panels tabs -->
+                <product-tabs></product-tabs>                    
+                
+                <form>
+                        <button ng-show="product.canPurchase"> Add to Cart </button>
+                </form>                                            
+            </li>
+        </ul>                
+    </div>
+
+</body>
+</html>
