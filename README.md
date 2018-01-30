@@ -1,2 +1,2 @@
 # angularStore
-example of angular js og gems store app
+Example of angular js of gems store app.  https://www.codeschool.com/courses/shaping-up-with-angularjs
