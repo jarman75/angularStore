@@ -88,5 +88,33 @@
                 "createdOn": 1397490980837
             }
         ]
+    },
+    {
+    "name": "Zircondia",
+        "description": "Zircondia is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+        "shine": 70,
+        "price": 5780,
+        "rarity": 2,
+        "color": "#000",
+        "faces": 6,
+        "images": [
+            "img/gem-01.gif",
+            "img/gem-02.gif",
+            "img/gem-03.gif"
+        ],
+        "reviews": [
+            {
+                "stars": 1,
+                "body": "This gem is WAY too expensive for its rarity value.",
+                "author": "turtleguyy@zdn.me",
+                "createdOn": 1397490980837
+            },           
+            {
+                "stars": 1,
+                "body": "Don't waste your rubles!",
+                "author": "nat@flatland.com",
+                "createdOn": 1397490980837
+            }
+        ]
     }
 ]
